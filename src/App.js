@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.scss";
+import "bootstrap/dist/css/bootstrap.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <header>
+                <div className="inner">
+                    <h1>로체의 블로그</h1>
+                </div>
+            </header>
+            <div className="wrapper">
+                <div className="left-side"></div>
+                <div className="center"></div>
+                <div className="right-side"></div>
+            </div>
+            <footer></footer>
+        </div>
+    );
 }
 
 export default App;
